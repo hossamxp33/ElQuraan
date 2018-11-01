@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+   <com.codesroots.elquraan.Helpers.rtlVIEWPAGER
+       android:id="@+id/full_pager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       />
+
+   <RelativeLayout
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:gravity="center_vertical"
+       android:orientation="horizontal"
+       android:background="@color/colorPrimary"
+       android:layout_alignParentTop="true">
+
+      <ImageView
+          android:id="@+id/speed_find"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:background="@drawable/goldmenu"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="18dp" />
+
+
+      <ImageView
+          android:id="@+id/ds"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginLeft="20dp"
+          android:layout_toRightOf="@+id/menuq"
+          android:layout_marginTop="6dp"
+          android:background="@drawable/pin"
+      />
+      <ImageView
+          android:id="@+id/menuq"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:layout_marginLeft="10dp"
+          android:layout_alignParentLeft="true"
+          android:background="@drawable/dotsmenu"
+          android:layout_marginTop="6dp"
+          />
+
+      <ImageView
+          android:id="@+id/menu"
+          android:layout_width="32dp"
+          android:layout_height="32dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp" />
+
+
+   </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:orientation="vertical">
+
+   <LinearLayout
+       android:id="@+id/play_lin"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:animateLayoutChanges="true"
+       android:orientation="vertical"
+        >
+
+      <com.dd.ShadowLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="18dp"
+          app:sl_cornerRadius="30dp"
+          app:sl_dx="0dp"
+          app:sl_dy="0dp"
+          app:sl_shadowColor="#aa313131"
+          app:sl_shadowRadius="6dp">
+
+         <com.codesroots.elquraan.Models.CircleImageView
+             android:id="@+id/switch_sound"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_gravity="right"
+             android:src="@drawable/telawoaicon"/>
+
+      </com.dd.ShadowLayout>
+
+      <com.dd.ShadowLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="-5dp"
+          android:layout_marginLeft="-4dp"
+          android:layout_marginRight="-4dp"
+          android:layout_marginTop="5dp"
+          app:sl_cornerRadius="25dp"
+          app:sl_dx="0dp"
+          app:sl_dy="0dp"
+          app:sl_shadowColor="#aa313131"
+          app:sl_shadowRadius="4dp">
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:background="@drawable/linear_background"
+             android:gravity="center"
+             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/play_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="20dp"
+                android:paddingTop="4dp"
+                android:text="@string/tafseer"
+                android:textColor="@color/yel"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:id="@+id/tafseer_relative"
+                   android:layout_width="32dp"
+                   android:layout_height="32dp"
+                   android:layout_gravity="left"
+                   android:layout_marginLeft="10dp"
+                   android:background="@drawable/graycircle"
+                   >
+
+                  <ImageView
+                      android:id="@+id/play_tafseer"
+                      android:layout_width="15dp"
+                      android:layout_height="15dp"
+                      android:layout_centerInParent="true"
+                      android:layout_marginLeft="2dp"
+                      android:background="@drawable/playgold" />
+
+                  <com.tuyenmonkey.mkloader.MKLoader
+                      android:id="@+id/progressa"
+                      android:layout_width="16dp"
+                      android:layout_height="16dp"
+                      android:layout_centerInParent="true"
+                      android:visibility="gone"
+                      app:mk_color="@color/yel"
+                      app:mk_type="FishSpinner" />
+               </RelativeLayout>
+
+               <ImageView
+                   android:id="@+id/stop_tafseer"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="bottom"
+                   android:layout_marginBottom="4dp"
+                   android:paddingLeft="3dp"
+                   android:paddingRight="3dp"
+                   android:src="@drawable/stop"
+                   android:visibility="gone" />
+
+               <TextView
+                   android:id="@+id/tafseer_time"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="8dp"
+                   android:gravity="right|center_vertical"
+                   android:text="0:00"
+                   android:textColor="@color/yel" />
+
+               <SeekBar
+                   android:id="@+id/tafseer_seek"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1" />
+
+
+               <TextView
+                   android:id="@+id/tafseer_total"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginRight="12sp"
+                   android:gravity="right|center_vertical"
+                   android:paddingRight="15dp"
+                   android:text="0:00"
+                   android:textColor="@color/yel" />
+            </LinearLayout>
+
+         </LinearLayout>
+      </com.dd.ShadowLayout>
+   </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/lisen_lin"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/white"
+          android:orientation="horizontal"
+          android:visibility="gone"
+         android:layout_below="@+id/play_lin"
+          app:layout_constraintBottom_toBottomOf="parent">
+
+         <TextView
+             android:id="@+id/listen"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:layout_marginEnd="8dp"
+             android:layout_marginStart="8dp"
+             android:layout_marginTop="8dp"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:padding="6dp"
+             android:text="@string/lisen"
+             android:textColor="@color/black"
+             android:textSize="14sp" />
+
+         <TextView
+             android:id="@+id/download"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:layout_marginEnd="8dp"
+             android:layout_marginTop="8dp"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:padding="6dp"
+             android:text="@string/download"
+             android:textColor="@color/black"
+             android:textSize="14sp" />
+
+      </LinearLayout>
+   </LinearLayout>
+
+
+</RelativeLayout>

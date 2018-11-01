@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dd.ShadowLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sl_shadowRadius="4dp"
+        app:sl_shadowColor="#aa313131"
+        android:layout_marginBottom="-5dp"
+        app:sl_dx="0dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:sl_dy="0dp"
+        app:sl_cornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/tafaseer_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:paddingTop="4dp"
+                android:paddingLeft="4dp"
+                android:id="@+id/play_title"
+                android:paddingBottom="4dp"
+                android:paddingRight="20dp"
+                android:text="@string/tafseer"
+                android:textColor="@color/yel"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/graycircle"
+                    android:id="@+id/tafseer_relative"
+                    >
+
+                    <ImageView
+                        android:id="@+id/play_tafseer"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/playgold" />
+                    <com.tuyenmonkey.mkloader.MKLoader
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        app:mk_type="FishSpinner"
+                        app:mk_color="@color/yel"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/progressa"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/stop_tafseer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="3dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="bottom"
+                    android:visibility="gone"
+                    android:paddingRight="3dp"
+                    android:src="@drawable/stop" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:id="@+id/tafseer_time"
+                    android:layout_marginLeft="8dp"
+                    android:text="0:00"
+                    android:textColor="@color/yel"
+                    />
+
+                <SeekBar
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tafseer_seek"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="15dp"
+                    android:layout_marginRight="12sp"
+                    android:id="@+id/tafseer_total"
+                    android:textColor="@color/yel"
+                    android:text="0:00"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </com.dd.ShadowLayout>
+
+
+</android.support.constraint.ConstraintLayout>

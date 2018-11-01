@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">تفسير الشيخ ابراهيم نياس الصوتى</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ok">موافق</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="tafseer">تفسير الشيخ ابراهيم نياس</string>
+    <string name="telawoa">تلاوة</string>
+    <string name="connection_error">تأكد من اتصالك بالانترنت</string>
+    <string name="ayatha">اياتها</string>
+    <string name="fajr">الفجر</string>
+    <string name="duhr">الظهر</string>
+    <string name="asr">العصر</string>
+    <string name="maghreb">المغرب</string>
+    <string name="esha">العشاء</string>
+    <string name="notengough">لا توجد مساحة كافية لتحميل السور القراءانية</string>
+    <string name="kaaba_position">Kaaba position</string>
+    <string name="current_location">Current location</string>
+    <string name="kaaba">Kaaba</string>
+    <string name="state_location_pref_key">state_LOCATION_PREF</string>
+    <string name="latitude_north">N</string>
+    <string name="latitude_south">S</string>
+    <string name="longitude_east">E</string>
+    <string name="longitude_west">W</string>
+    <string name="gps_pref_key">GPS_LOCATION_PREF</string>
+    <string name="no_location_yet">لم يتم تحديد المكان بعد</string>
+    <string name="screen_down_text">text</string>
+    <string name="geo_location_info">Location Data Acquired.</string>
+    <string name="settings_label">Settings</string>
+    <string name="prefs_menu_title">Settings</string>
+    <string name="about_menu_title">About</string>
+    <string name="default_location_text">Direction of Qibla \nin %s</string>
+    <string name="aya">اية</string>
+    <string name="downloading_images">جاري تحميل الملفات</string>
+    <string-array name="state_names">
+
+        <item>اراک</item>
+        <item>اردبیل</item>
+        <item>ارومیه</item>
+        <item>اصفهان</item>
+        <item>اهواز</item>
+        <item>ایلام</item>
+        <item>بجنورد</item>
+        <item>بندرعباس</item>
+        <item>بوشهر</item>
+        <item>بیرجند</item>
+        <item>تبریز</item>
+        <item>تهران</item>
+        <item>خرم‌آباد</item>
+        <item>رشت</item>
+        <item>زاهدان</item>
+        <item>زنجان</item>
+        <item>ساری</item>
+        <item>سمنان</item>
+        <item>سنندج</item>
+        <item>شهرکرد</item>
+        <item>شیراز</item>
+        <item>قزوین</item>
+        <item>قم</item>
+        <item>کرج</item>
+        <item>کرمان</item>
+        <item>کرمانشاه</item>
+        <item>گرگان</item>
+        <item>مشهد</item>
+        <item>همدان</item>
+        <item>یاسوج</item>
+        <item>یزد</item>
+    </string-array>
+    <string-array name="state_keys" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+
+    <string name="dialog_no_internet">تأكد من اتصالك بالانترنت</string>
+    <string name="dialog_no_inter_message">خدمة الانترنت لا تعمل</string>
+    <string name="hosary">تلاوة بصوت الشيخ الحصري</string>
+    <string name="mawakit">مواقيت الصلاة</string>
+    <string name="qibla">القبلة</string>
+    <string name="compass_not_supported">هاتفك لا يدعم خدمة البوصلة</string>
+    <string name="etgah_elqibla">إتجاه القبلة</string>
+    <string name="page">- الصفحة</string>
+    <string name="makia">مكية</string>
+    <string name="madnia">مدنية</string>
+    <string name="quranapp">تطبيق القرءان الكريم</string>
+    <string name="alarmac">تنبيه المراجعة اليومية والاسبوعية</string>
+    <string name="alarm">تنبيه</string>
+    <string name="done">تم</string>
+    <string name="time">الوقت</string>
+    <string name="add_totable">اضافة تنبيه</string>
+    <string name="add_mada">تنبيه عن</string>
+    <string name="alarm_time">ميعاد التنبيه</string>
+    <string name="entermada">ادخل اسم التنبيه</string>
+    <string name="add_alarm">اضافة تنبيه</string>
+    <string name="choosedate">من فضلك اختر ميعاد التنبيه</string>
+    <string name="play">تشغيل</string>
+    <string name="download">تحميل</string>
+    <string name="ayat_num">عدد الايات</string>
+    <string name="tartib">الترتيب</string>
+    <string name="sora">سورة</string>
+    <string name="pleasewait">انتظر من فضلك</string>
+    <string name="sora_list">قائمة السور</string>
+    <string name="favourite">القائمة المفضلة</string>
+    <string name="soraexists">السورة موجودة بقائمة المفضلة بالفعل</string>
+    <string name="lisen">استماع</string>
+    <string name="added">تمت اضافة السورة الي المفضلة</string>
+    <string name="enter_page">ادخل رقم الصفحة</string>
+    <string name="speed_go">الانتقال الي الفاصل</string>
+    <string name="go">الانتقال الي الفاصل</string>
+    <string name="notfound">هذا الرقم غير موجود</string>
+    <string name="type">مكان النزول</string>
+    <string name="number">رقم</string>
+    <string name="download_tafseer">تحميل التفسير</string>
+    <string name="download_telawoa">تحميل التلاوة</string>
+    <string name="file_exists">الملف تم تحميله من قبل</string>
+    <string name="add_fasel">اضافة فاصل</string>
+    <string name="goes">الانتقال</string>
+    <string name="arabic">اللغة العربية</string>
+    <string name="urdo">اللغة الولوفية</string>
+    <string name="downloaded">تم التحميل</string>
+    <string name="filenotdownloaded">لم يتم تحميل الملف الصوتي بعد</string>
+    <string name="playtafseer">الاستماع الى التفسير</string>
+    <string name="playtelawoa">الاستماع الى التلاوة</string>
+    <string name="loading">جاري تحميل الملفات للمرة الاولي فقط</string>
+    <string name="loadings">جاري استكمال تحميل باقي السور لمرة واحدة فقط</string>
+    <string name="fasel">الفاصل</string>
+    <string name="singlepage">صفحة</string>
+    <string name="pagenumber">رقم الصفحة</string>
+    <string name="go_speed">الانتقال السريع الى الفاصل </string>
+    <string name="sora_names">السورة</string>
+    <string name="about_us">عن التطبيق</string>
+    <string name="abount_sheikh">عن الشيخ ابراهيم نياس</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="invalidurl">لينك السورة غير صالح</string>
+    <string name="finish_quraan">دعاء ختم القرآن</string>
+
+    <string name="about_app">نشأة  في حاضنة دينية صوفية تجانية وبعد حصولي على الباكلوريا، توجهت إلى دراسة هندسة المعلوماتية وهي أمور ساعد فيها التوفيق بموهبة تحدوها هواية للتقنيات الجديدة، مع أنه لم تغب عن خلدي أهمية المعارف التي يحتويها تفسير الشيخ ابراهيم نياس، ففكرت في تسخيرها لخدمة الدين عبر أحدث التكنلوجيات التي لم يتوفر بعدُ استخدامها كثيرا في خدمة تراث علمائنا... وذلك ما تجسد في القيام بمجهود تطوعي استمر لعقد من الزمن، كرست خلاله مجهوداتي لتهيئة هذه الدروس التفسيرية الصوتية لشيخ الإسلام الشيخ إبراهيم نظرا لنفعها الكبير الشامل في مجال تفسير القرآن الكريم. وقد تطلب هذا التطبيق أربعة مراحل، منها جمع المادة الصوتية المطبقة أولا، وقد طال هذا العمل 6 سنوات لوحده، تم الحصول منها على 600 شريط مغناطيسي 2 تحويلها إلى نسخة رقمية بتقنيات حديثة3 : تنقية تسجيلاتها من التشويش وحذف الفراغات جراء تقادم الأشرطة 4: تصفية الصوت وترتيب التفسير تبعا لترتيب سور المصحف الشريف، لتكون صالحة لاستخدامها عبر تطبيق متطور يقربها من المستخدم الآلي الألكتروني في كل مع متابعة السورة على الشاشة برواية ورش.
+
+ فيما يتعلق بالمصحف حرصت على اعتماد قراءة ورش بدل حفص والقراءات الأخرى وهي تجربة رائدة في تطبيقات القرءان الكريم في منطقتنا على ترتيب صفحات المصحف بحيث يراعي التفسير الصوتي مواكبة عدد صفحات المصحف الشريف وحرية التنقل جمعا بينهما، وميسرة طلب الصفحة تبعا لرقمها الذي يطلبها المستخدم بواسطته
+
+كذلك تم اعتماد تلاوة الشيخ الحصري في هذا التطبيق، حيث إنه  تربطه بالشيخ براهيم نيأس علاقة خاصة فقد أعجب بتلاوته والشيخ هو أول من نصح علماء مصر بتسجيله للمصحف بصوته الذي يتميز بقبول حسن خاصة لدى الشيخ صاحب التفسير الذي استدعى الشيخ محمود خليل الحصري في مدينته وكان يجود القرآن بحضرته، فعندما يفرغ من التلاوة، يقول له الشيخ إبراهيم نياس: " هكذا أُنْزِلْ".
+
+وقد استعنت في إعداد هذا البرنامج المطبِّق للتفسير على أكبر خبرات البرمجة في مجال التطبيقات الألكترونية، مع مراعاة الإبداعات في كل جانب من جوانب التصميم وبرمجة التطبيقات، واستيراد خدماتها المتميزة، ليكون هذا التطبيق ثمرة خالصة سهلة المأخذ، معينا على توصيل بحر علم هذا التفسير، وذلك كله لوجه الله تعالى، مجانا من غير مقابل غير دعوة من أخٍ صالح أرجوها أو ثوابا من الله تعالى المهندس سيد محمد بن محمد العاقب
+
+يتضمن البرنامج عدة مزايا ملفات التحميل: 1 مصحف  برواية ورش عن نافع 2 التفسير الشيخ ابراهيم نياس الصوتي باللغة العربية 3 التفسير الشيخ ابراهيم نياس الصوتي باللغة المحلية الولوفية 4 المصحف المرتل برواية ورش الشيخ محمود خليل الحصري
+
+ </string>
+</resources>

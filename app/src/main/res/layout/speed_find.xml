@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/edit_back"
+    android:layout_gravity="center"
+    android:layout_marginLeft="30dp"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="@string/go_speed" />
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/close_dialog"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/close_dialog"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fav_list"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:visibility="gone"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/fasel"
+            android:id="@+id/openfasel"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/edit_backs"
+            android:text="@string/singlepage"
+            android:id="@+id/gopage"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:id="@+id/search"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/fav_list"
+        >
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:hint="@string/pagenumber"
+            android:inputType="number"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/wiw"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/se"
+            android:text="@string/enter_page"
+            android:layout_marginRight="25dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/goes"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/go"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_back"
+        />
+
+</android.support.constraint.ConstraintLayout>

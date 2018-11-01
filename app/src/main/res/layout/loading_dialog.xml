@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:gastudio="http://schemas.android.com/apk/res-auto">
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/ga_downloading"
+        android:layout_width="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        gastudio:arrow_color="@color/green"
+        gastudio:done_text_color="@android:color/darker_gray"
+        gastudio:loading_circle_back_color="@android:color/holo_red_light"
+        gastudio:loading_line_color="@android:color/black"
+        gastudio:progress_line_color="@android:color/tertiary_text_dark"
+        gastudio:progress_text_color="@android:color/holo_purple"/>
+
+
+
+
+</RelativeLayout>

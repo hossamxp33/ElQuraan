@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/wow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/beige"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/expand"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/sora_type"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/type"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/sora_names"
+            android:textColor="@color/notification_action_color_filter"
+             android:gravity="center"
+            android:text="@string/sora"
+            />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:id="@+id/sora_number"
+            android:text="@string/number"
+            android:textColor="@color/black"
+            android:layout_marginRight="8dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/light_gray"
+        android:id="@+id/aoa"
+        app:layout_constraintTop_toBottomOf="@+id/wow"
+        />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/download_dialog_recycler"
+            app:layout_constraintTop_toBottomOf="@+id/aoa"
+            />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ss"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/all_sour_row_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="14dp"
+            android:id="@+id/ayat_num"
+            android:paddingTop="14dp"
+            android:text="@string/ayat_num"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="14dp"
+            android:id="@+id/tartib"
+            android:textColor="@color/yel"
+            android:text="@string/tartib"
+            android:paddingTop="14dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/sora"
+            android:id="@+id/sora_name"
+            android:paddingBottom="14dp"
+            android:paddingTop="14dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/light_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/ss"
+        />
+
+</android.support.constraint.ConstraintLayout>
